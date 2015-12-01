@@ -117,6 +117,7 @@ __Arguments__
  * options - An object with the following options:
   * port - The port to listen on (default: 8080).
   * sslCertCacheDir - Path to the certificates cache directory (default: ~/.http-mitm-proxy)
+  * silent - if set to true, nothing will be written to console (default: false)
 
 __Example__
 
@@ -316,7 +317,7 @@ __Example__
     proxy.onWebSocketError(function(ctx, err) {
       console.log('WEBSOCKET ERROR:', ctx.clientToProxyWebSocket.upgradeReq.url, err);
     });
- 
+
 <a name="proxy_onWebSocketClose" />
 ### proxy.onWebSocketClose(fn) or ctx.onWebSocketClose(fn)
 
