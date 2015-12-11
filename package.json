@@ -23,7 +23,8 @@
   ],
   "author": "Joe Ferner <joe@fernsroth.com>",
   "contributors": [
-    "Félicien François <felicien@tweakstyle.com>"
+    "Félicien François <felicien@tweakstyle.com>",
+    "Paulo A. Silva <pauloasilva@gmail.com>"
   ],
   "license": "MIT",
   "dependencies": {

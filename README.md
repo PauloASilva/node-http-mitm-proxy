@@ -2,6 +2,21 @@
 
 HTTP Man In The Middle (MITM) Proxy written in node.js. Supports capturing and modifying the request and response data.
 
+## Note
+
+This is a fork of [Joe Ferner's node-http-mitm-proxy project](https://github.com/joeferner/node-http-mitm-proxy)
+in which I introduced the [`onCertificateRequired()`](#proxy_onCertificateRequired)
+and [`onCertificateMissing()`](#proxy_onCertificateMissing) methods, allowing
+on-the-fly certificates signing, through system hooking: I strongly believe that
+certificate signing shouldn't be `node-http-mitm-proxy` responsibility.
+
+Nowadays [Joe Ferner's node-http-mitm-proxy](https://github.com/joeferner/node-http-mitm-proxy)
+has built-in on-the-fly certificate signing capability
+([DanBUK contribution](https://github.com/joeferner/node-http-mitm-proxy/commit/afd7faa8de20a9b6d0c3a371f95bfe193761d38f))
+but my position remains the same and this is where my fork differs from the
+original one. Nevertheless, other contributions were and they will be,
+merged.
+
 # Install
 
 `npm install --save http-mitm-proxy`
